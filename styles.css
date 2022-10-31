@@ -10,18 +10,40 @@ body {
     background-image: url(images/ruan-richard-rodrigues-B9WQWQQsZUE-unsplash.jpg);
     background-color: antiquewhite;
     background-size: cover;
-    min-width: 40%;
+    min-width: 40vw;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.logo-space {
+    flex: 1 0 auto;
+    text-align: center;
+    align-content: center;
+    display: flex;
+}
+
+.logo {
+    margin: auto;
+    background: rgba(100, 100, 100, 0.3);
+    width: 100%;
+}
+
+.logo-credit {
+    flex-shrink: 0;
 }
 
 .side-right {
-    background-color: gainsboro;
+    background-color: #e4e4e4;
 }
 
 .inputs {
     display: flex;
     flex-direction: column;
-    border-style: solid;
-    padding: 10px;
+    padding: 20px;
+    margin: 0;
+    background-color: whitesmoke;
+    box-shadow: 5px 10px 10px #adadad;
 }
 
 .input-area {
@@ -31,4 +53,13 @@ body {
 .input-half {
     display: flex;
     flex-direction: column;
+    border: solid 1px;
+}
+
+.input-row {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin-bottom: 20px;
 }

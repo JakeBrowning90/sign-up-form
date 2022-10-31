@@ -9,31 +9,53 @@
 </head>
 <body>
     <div class="side-left">
-        <h1>Left-side image</h1>
-        <p>Photo by <a href="https://unsplash.com/@heeybooy?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Ruan Richard Rodrigues</a> on <a href="https://unsplash.com/t/food-drink?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
-        </p>
+        <div class="logo-space">
+            <div class="logo">
+                <h1>Placeholder logo</h1>
+            </div>
+        </div>
+        <div class="logo-credit">
+            <p>Photo by <a href="https://unsplash.com/@heeybooy?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Ruan Richard Rodrigues</a> on <a href="https://unsplash.com/t/food-drink?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+            </p>
+        </div>
     </div>
     <div class="side-right">
         <p>This is not a real online service! You know you need something in your life to help you realize your deepest dreams. Sign up now to get started.</p>
         <p>You <em>know</em> you want to.</p>
         <div class="inputs">
             <p>Let's do this!</p>
-            <form action="">
-            <div class="input-area">
+            <form action="" class="input-area">
                 <div class="input-half">
-                        <label for="">FIRST NAME<input type="text"></label>
-                        <label for="">EMAIL<input type="text"></label>
-                        <label for="">PASSWORD<input type="text"></label>
+                        <div class="input-row">
+                            <label for="first_name">FIRST NAME</label>
+                            <input type="text" id="first_name" name="first_name">
+                        </div>
+                        <div class="input-row">
+                            <label for="email">EMAIL</label>
+                            <input type="email" id="email" name="email">
+                        </div>
+                        <div class="input-row">
+                            <label for="password">PASSWORD</label>
+                            <input type="password" id="password" name="password">
+                        </div>
                 </div>
                 <div class="input-half">
-                        <label for="">LAST NAME<input type="text"></label>
-                        <label for="">PHONE NUMBER<input type="text"></label>
-                        <label for="">CONFIRM PASSWORD<input type="text"></label>     
-                </div> 
-            </div>    
+                    <div class="input-row">
+                        <label for="last_name">LAST NAME</label>
+                        <input type="text" id="last_name" name="last_name">
+                    </div>
+                    <div class="input-row">
+                        <label for="phone">PHONE NUMBER</label>
+                        <input type="tel" id="phone" name="phone">
+                    </div>
+                    <div class="input-row">
+                        <label for="confirm_pwd">CONFIRM PASSWORD</label>
+                        <input type="password" id="confirm_pwd">
+                    </div>   
+                </div>    
             </form> 
         </div>
-        <button>Create Account</button>
+        <button type="button">Create Account</button>
         <p>Already have an account? Log In</p>
     </div>
 </body>
