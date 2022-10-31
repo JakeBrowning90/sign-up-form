@@ -1,0 +1,34 @@
+body {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100vw;
+}
+
+.side-left {
+    background-image: url(images/ruan-richard-rodrigues-B9WQWQQsZUE-unsplash.jpg);
+    background-color: antiquewhite;
+    background-size: cover;
+    min-width: 40%;
+}
+
+.side-right {
+    background-color: gainsboro;
+}
+
+.inputs {
+    display: flex;
+    flex-direction: column;
+    border-style: solid;
+    padding: 10px;
+}
+
+.input-area {
+    display: flex;
+}
+
+.input-half {
+    display: flex;
+    flex-direction: column;
+}
