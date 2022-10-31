@@ -25,16 +25,27 @@ body {
 
 .logo {
     margin: auto;
-    background: rgba(100, 100, 100, 0.3);
+    background: rgba(100, 100, 100, 0.55);
     width: 100%;
 }
 
 .logo-credit {
     flex-shrink: 0;
+    padding: 2px;
+    background: rgba(100, 100, 100, 0.55);
+    width: 100%;
+}
+
+.logo-credit p {
+    margin: 0;
 }
 
 .side-right {
     background-color: #e4e4e4;
+}
+
+.right-sandwich {
+    padding: 20px 100px 20px 20px;
 }
 
 .inputs {
@@ -48,12 +59,12 @@ body {
 
 .input-area {
     display: flex;
+    gap: 30px;
 }
 
 .input-half {
     display: flex;
     flex-direction: column;
-    border: solid 1px;
 }
 
 .input-row {
@@ -62,4 +73,12 @@ body {
     flex-wrap: wrap;
     justify-content: flex-start;
     margin-bottom: 20px;
+}
+
+.input-row input{
+    margin-bottom: 5px;
+}
+
+.input-row label{
+    margin-bottom: 5px;
 }
