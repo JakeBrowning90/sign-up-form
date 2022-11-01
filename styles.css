@@ -1,4 +1,4 @@
-body {
+html, body {
     display: flex;
     margin: 0;
     padding: 0;
@@ -6,11 +6,34 @@ body {
     width: 100vw;
 }
 
+@font-face {
+    font-family: logoFont;
+    src: url(coffee+teademo-Regular.ttf);
+}
+
+h1 {
+    color: whitesmoke;
+    font-family: logoFont;
+    font-size: 50px;
+    margin: 0;
+    padding: 0;
+}
+
+button {
+    padding: 10px;
+    font-size: medium;
+    font-weight: bold;
+    color: #414141;
+    background-color: #cccccc;
+    border-radius: 4px;
+}
+
 .side-left {
     background-image: url(images/ruan-richard-rodrigues-B9WQWQQsZUE-unsplash.jpg);
     background-color: antiquewhite;
     background-size: cover;
     min-width: 40vw;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -18,22 +41,28 @@ body {
 
 .logo-space {
     flex: 1 0 auto;
-    text-align: center;
+    /*text-align: center;
     align-content: center;
-    display: flex;
+    display: flex;*/
+    box-sizing: border-box;
+    padding-top: 150px;
 }
 
 .logo {
     margin: auto;
-    background: rgba(100, 100, 100, 0.55);
+    background: rgba(100, 100, 100, 0.7);
     width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .logo-credit {
     flex-shrink: 0;
     padding: 2px;
-    background: rgba(100, 100, 100, 0.55);
+    background: rgba(100, 100, 100, 0.7);
     width: 100%;
+    color: whitesmoke;
 }
 
 .logo-credit p {
@@ -42,6 +71,7 @@ body {
 
 .side-right {
     background-color: #e4e4e4;
+    height: 100vh;
 }
 
 .right-sandwich {
@@ -76,7 +106,21 @@ body {
 }
 
 .input-row input{
-    margin-bottom: 5px;
+    background-color: #FFFFFF;
+    border: 1px solid #c4c4c4;
+    border-radius: 3px;
+    width: 100%;
+    padding: 5px;
+    font-size: 14px;
+}
+
+.input-row input:invalid{
+    background-color: #ffbbbb;
+    border: 1px solid #ff0000;
+}
+
+.input-row input:focus{
+    border: 1px solid #2f00ff;
 }
 
 .input-row label{
