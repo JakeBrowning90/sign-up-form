@@ -114,13 +114,14 @@ button {
     font-size: 14px;
 }
 
-.input-row input:invalid{
-    background-color: #ffbbbb;
-    border: 1px solid #ff0000;
+.input-row input:valid{
+    border: 1px solid #583aff;
+    background-color: #e1dbff;
 }
 
 .input-row input:focus{
-    border: 1px solid #2f00ff;
+    border: 1px solid #583aff;
+    box-shadow: 3px 3px 3px #adadad;
 }
 
 .input-row label{
